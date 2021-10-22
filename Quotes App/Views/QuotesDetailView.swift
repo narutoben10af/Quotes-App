@@ -16,8 +16,11 @@ struct QuotesDetailView: View
         {
             VStack
             {
-                Text(quote.author).font(.largeTitle).fontWeight(.bold).padding()
-                Text(quote.explanation).fontWeight(.semibold)
+                Text(quote.strQuote).font(.largeTitle).fontWeight(.bold)
+                Text(quote.author).font(.title).fontWeight(.bold)
+                Spacer()
+                Divider()
+                Text(quote.explanation).fontWeight(.semibold).padding()
             }
         }
     }

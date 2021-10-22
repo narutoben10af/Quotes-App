@@ -29,7 +29,7 @@ struct QuotesListView: View
         {
             return model.quotes.filter
             { item in
-                item.strQuote.contains(searchText) || item.author.contains(searchText)
+                item.strQuote.localizedCaseInsensitiveContains(searchText) || item.author.localizedCaseInsensitiveContains(searchText)
             }
 //            return model.quotes.filter
 //            { [$0.strQuote, $0.author].contains(searchText)
@@ -63,7 +63,7 @@ struct QuotesListView: View
                                                 
                                                 Text(quote.author).font(.headline).fontWeight(.semibold)
                                                 
-                                            }.padding().background(Color.gray.opacity(0.5)).foregroundColor(.white)
+                                            }.padding().background(Color.gray.opacity(0.5)).cornerRadius(20).foregroundColor(.white)
                                             
                                         }
                                         
@@ -74,7 +74,9 @@ struct QuotesListView: View
             }.searchable(text: $searchText, prompt: "Search Quotes", suggestions: {
                 ForEach(model.quotes)
                 {suggestion in
-                    Text(suggestion.strQuote).searchCompletion(suggestion.strQuote)
+                    Text(suggestion.strQuote).fontWeight(.bold).foregroundColor(Color.accentColor).searchCompletion(suggestion.strQuote).padding().background(Color.clear).opacity(2.0)
+                    
+//                        .blur(radius: 0.5, opaque: false)
                 }
 //                {Text("Unrelenting Guts").searchCompletion("Unrelenting Guts")}{Text("Confronting Courage").searchCompletion("Confronting Courage")}
             }
