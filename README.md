@@ -1,1 +1,1 @@
-# SwiftPracticeApps
+# QuotesApp
