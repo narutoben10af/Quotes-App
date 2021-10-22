@@ -1,0 +1,32 @@
+[
+    {
+        "image":"endou",
+        "author":"Endou Daisuke",
+        "strQuote":"Unrelenting Guts",
+        "explanation":"The First Heart - The heart to never give up no matter what happens"
+    },
+    {
+        "image":"gouenji",
+        "author":"Endou Daisuke",
+        "strQuote":"Confronting Courage",
+        "explanation":"The Second Heart - The heart to never fear no matter how strong the enemy is"
+    },
+    {
+        "image":"kazemaru",
+        "author":"Endou Daisuke",
+        "strQuote":"Bottomless Kindness",
+        "explanation":"The Third Heart - The heart to protect those precious to oneself"
+    },
+    {
+        "image":"fubuki",
+        "author":"Endou Daisuke",
+        "strQuote":"Absolute Faith",
+        "explanation":"The Fourth Heart - The heart to trust one’s comrades entirely"
+    },
+    {
+        "image":"hiroto",
+        "author":"Endou Daisuke",
+        "strQuote":"Ice-solid Composure",
+        "explanation":"The Fifth Heart - The heart to remain steadfast no matter the circumstances"
+    }
+]
